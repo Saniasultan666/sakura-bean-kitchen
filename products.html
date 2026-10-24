@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakura & Bean Kitchen — Menu</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sakura & Bean Kitchen</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Menu</a></li>
+        <li><a href="cart.html">Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-title">
+      <h1>Our Menu</h1>
+      <p>Search, filter and sort to find your favourite dish.</p>
+    </section>
+
+    <!-- Search, filter and sort controls -->
+    <section class="controls" aria-label="Menu controls">
+      <div class="control">
+        <label for="searchInput">Search</label>
+        <input type="search" id="searchInput" placeholder="Search dishes...">
+      </div>
+
+      <div class="control">
+        <label for="categoryFilter">Category</label>
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="starters">Starters</option>
+          <option value="main">Main Course</option>
+          <option value="desserts">Desserts</option>
+          <option value="drinks">Drinks</option>
+        </select>
+      </div>
+
+      <div class="control">
+        <label for="sortSelect">Sort by</label>
+        <select id="sortSelect">
+          <option value="default">Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name">Name (A to Z)</option>
+          <option value="rating">Rating (Highest)</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Loading and error messages (jQuery will show or hide these) -->
+    <p id="statusMessage" class="status-message">Loading menu...</p>
+
+    <!-- Product grid and details panel -->
+    <div class="menu-layout">
+
+      <section class="menu-section" aria-label="Dishes">
+        <div id="productGrid" class="product-grid"></div>
+      </section>
+
+      <aside id="detailsPanel" class="details-panel" aria-label="Dish details">
+        <h2>Dish Details</h2>
+        <p id="detailsPlaceholder">Select a dish to see its details here.</p>
+        <article id="detailsContent"></article>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Sakura & Bean Kitchen. All rights reserved.</p>
+    <p>MM Alam Road, Gulberg III, Lahore | +92 300 1234567</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
