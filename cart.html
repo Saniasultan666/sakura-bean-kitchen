@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakura & Bean Kitchen — Cart & Checkout</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sakura & Bean Kitchen</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Menu</a></li>
+        <li><a href="cart.html">Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-title">
+      <h1>Your Cart</h1>
+      <p>Review your order, then fill in your details to check out.</p>
+    </section>
+
+    <!-- Cart table (rows are built by JavaScript) -->
+    <section class="cart-section" aria-label="Cart items">
+      <p id="emptyMessage" class="status-message">Your cart is empty. <a href="products.html">Browse the menu</a>.</p>
+
+      <table id="cartTable" class="cart-table">
+        <thead>
+          <tr>
+            <th>Dish</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+      </table>
+
+      <!-- Totals -->
+      <div class="totals">
+        <p>Subtotal: <strong>Rs. <span id="subtotal">0</span></strong></p>
+        <p>Discount: <strong>Rs. <span id="discount">0</span></strong></p>
+        <p class="grand-total">Grand Total: <strong>Rs. <span id="grandTotal">0</span></strong></p>
+      </div>
+    </section>
+
+    <!-- Checkout form -->
+    <section class="checkout-section" aria-label="Checkout">
+      <h2>Checkout</h2>
+
+      <form id="checkoutForm" novalidate>
+
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required minlength="3" placeholder="Your full name">
+          <span class="error" id="fullNameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required pattern="[0-9]{11}" placeholder="03001234567">
+          <span class="error" id="phoneError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="orderType">Order Type</label>
+          <select id="orderType" name="orderType" required>
+            <option value="">Select...</option>
+            <option value="dine-in">Dine-in</option>
+            <option value="takeaway">Takeaway</option>
+            <option value="delivery">Delivery</option>
+          </select>
+          <span class="error" id="orderTypeError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="people">Number of People</label>
+          <input type="number" id="people" name="people" min="1" max="20" required placeholder="1">
+          <span class="error" id="peopleError"></span>
+        </div>
+
+        <fieldset class="form-group">
+          <legend>Payment Method</legend>
+          <label><input type="radio" name="payment" value="cash" required> Cash</label>
+          <label><input type="radio" name="payment" value="card"> Card</label>
+          <label><input type="radio" name="payment" value="online"> Online</label>
+          <span class="error" id="paymentError"></span>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="address">Address / Special Instructions</label>
+          <textarea id="address" name="address" rows="3" required minlength="10" placeholder="Delivery address or notes for the kitchen"></textarea>
+          <span class="error" id="addressError"></span>
+        </div>
+
+        <div class="form-group">
+          <label><input type="checkbox" id="terms" name="terms" required> I confirm my order details are correct</label>
+          <span class="error" id="termsError"></span>
+        </div>
+
+        <button type="submit" class="btn">Place Order</button>
+        <p id="orderSuccess" class="success-message"></p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Sakura & Bean Kitchen. All rights reserved.</p>
+    <p>MM Alam Road, Gulberg III, Lahore | +92 300 1234567</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
