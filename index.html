@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakura & Bean Kitchen — Home</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sakura & Bean Kitchen</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Menu</a></li>
+        <li><a href="cart.html">Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero banner -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Dining under the blossoms</h1>
+        <p>Fresh, seasonal dishes inspired by spring. Order online and enjoy a quiet table, or take it home.</p>
+        <a href="products.html" class="btn">Order Now</a>
+      </div>
+      <img src="images/riceball.jpeg" alt="A beautifully plated dish at Sakura & Bean Kitchen">
+    </section>
+
+    <!-- Featured dishes (filled in by JavaScript ) -->
+    <section class="featured">
+      <h2>Featured Dishes</h2>
+      <div id="featuredGrid" class="product-grid">
+        <p id="featuredMessage">Loading dishes...</p>
+      </div>
+    </section>
+
+    <!-- Why choose us (an unordered list) -->
+    <section class="why-us">
+      <h2>Why Sakura & Bean?</h2>
+      <ul>
+        <li>Fresh ingredients, prepared daily</li>
+        <li>Seasonal blossom-inspired menu</li>
+        <li>Quick online ordering</li>
+        <li>Cozy dine-in and fast takeaway</li>
+      </ul>
+    </section>
+
+    <!-- FAQ accordion (jQuery will make this expand and collapse) -->
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <article class="faq-item">
+        <h3 class="faq-question">Do you offer dine-in and takeaway?</h3>
+        <p class="faq-answer">Yes, we offer both, plus outdoor seating in the garden.</p>
+      </article>
+
+      <article class="faq-item">
+        <h3 class="faq-question">Are vegetarian options available?</h3>
+        <p class="faq-answer">Most categories include vegetarian dishes, clearly labelled on the menu.</p>
+      </article>
+
+      <article class="faq-item">
+        <h3 class="faq-question">How long does an order take?</h3>
+        <p class="faq-answer">Most orders are ready in 20 to 30 minutes.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Sakura & Bean Kitchen. All rights reserved.</p>
+    <p>MM Alam Road, Gulberg III, Lahore | +92 300 1234567</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
