@@ -7,8 +7,8 @@ A front-end restaurant menu and ordering website built with HTML5, CSS3, JavaScr
 **Theme:** Restaurant menu and ordering
 
 ## Live Demo and Repository
-- **Live site:** [your GitHub Pages link]
-- **Repository:** [your GitHub repository link]
+- **Live site:** https://saniasultan666.github.io/sakura-bean-kitchen/
+- **Repository:** https://github.com/Saniasultan666/sakura-bean-kitchen
 
 ## Team Members and Roles
 Name: Sania Sultan 
