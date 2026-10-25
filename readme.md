@@ -99,6 +99,7 @@ Orders with a subtotal of Rs. 3000 or more receive a 10% discount.
  Cart and checkout  ![Cart](images/cart1.png)
  Cart and checkout  ![Cart](images/cart2.png)  
  Contact | ![Contact](images/contact.png) |
- Mobile view | ![Mobile](images/mobile.png) |
+ Mobile view | ![Mobile](images/mobile1.png) |
+ Mobile view ![Mobile](images/moblie2.png) |
 ## Credits
 Food photographs were sourced from [Unsplash / Pexels / Pinterest] and are used for educational purposes only.

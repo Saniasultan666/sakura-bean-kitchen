@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Sakura Spring Rolls",
+    "price": 450,
+    "category": "starters",
+    "rating": 4.5,
+    "inStock": true,
+    "image": "images/spring-rolls.jpg",
+    "description": "Crispy rolls filled with fresh vegetables, served with a sweet chilli dip."
+  },
+  {
+    "id": 2,
+    "name": "Blossom Garden Salad",
+    "price": 820,
+    "category": "starters",
+    "rating": 4.3,
+    "inStock": true,
+    "image": "images/garden-salad.jpeg",
+    "description": "Crisp greens, edible flowers and sesame dressing."
+  },
+  {
+    "id": 3,
+    "name": "Crispy Tempura Bites",
+    "price": 1000,
+    "category": "starters",
+    "rating": 4.6,
+    "inStock": true,
+    "image": "images/tempura.jpeg",
+    "description": "Light, golden tempura vegetables with a soy dipping sauce."
+  },
+  {
+    "id": 4,
+    "name": "Miso Soup",
+    "price": 350,
+    "category": "starters",
+    "rating": 4.1,
+    "inStock": false,
+    "image":"images/miso-soup.jpeg",
+    "description": "Warm miso broth with tofu and spring onion."
+  },
+  {
+    "id": 5,
+    "name": "Teriyaki Chicken Bowl",
+    "price": 1150,
+    "category": "main",
+    "rating": 4.7,
+    "inStock": true,
+    "image": "images/terayaki-chicken-bowl.jpeg",
+    "description": "Glazed chicken over steamed rice with sesame vegetables."
+  },
+  {
+    "id": 6,
+    "name": "Creamy Pasta Carbonara",
+    "price": 1300,
+    "category": "main",
+    "rating": 4.4,
+    "inStock": true,
+    "image": "images/carbonara.jpeg",
+    "description": "Silky cream sauce, crispy chicken and parmesan."
+  },
+  {
+    "id": 7,
+    "name": "Omu rice",
+    "price": 1550,
+    "category": "main",
+    "rating": 4.6,
+    "inStock": true,
+    "image": "images/omu-rice.jpeg",
+    "description": "Juicy beef patty, cheddar and house sauce in a toasted bun."
+  },
+  {
+    "id": 8,
+    "name": "Veggie Ramen Bowl",
+    "price": 1050,
+    "category": "main",
+    "rating": 4.2,
+    "inStock": true,
+    "image": "images/ramen.jpeg",
+    "description": "Rich vegetable broth, noodles, mushrooms and a soft egg."
+  },
+  {
+    "id": 9,
+    "name": "Strawberry Shortcake",
+    "price": 750,
+    "category": "desserts",
+    "rating": 4.8,
+    "inStock": true,
+    "image": "images/strwaberry-shortcake.jpeg",
+    "description": "Creamy shortcake with a strawberry glaze."
+  },
+  {
+    "id": 10,
+    "name": " Pancakes",
+    "price": 680,
+    "category": "desserts",
+    "rating": 4.5,
+    "inStock": true,
+    "image": "images/pancakes.jpeg",
+    "description": "Fluffy pancakes with honey and berries."
+  },
+  {
+    "id": 11,
+    "name": "Mochi",
+    "price": 500,
+    "category": "desserts",
+    "rating": 4.3,
+    "inStock": false,
+    "image": "images/mochi.jpeg",
+    "description": "Soft rice cake filled with cream."
+  },
+  {
+    "id": 12,
+    "name": "Sakura Latte",
+    "price": 650,
+    "category": "drinks",
+    "rating": 4.7,
+    "inStock": true,
+    "image": "images/sakura-latte.jpeg",
+    "description": "Espresso, cherry blossom syrup and steamed milk."
+  },
+  {
+    "id": 13,
+    "name": "Iced Strawberry Matcha",
+    "price": 700,
+    "category": "drinks",
+    "rating": 4.4,
+    "inStock": true,
+    "image": "images/strawberry-matcha.jpeg",
+    "description": "Ceremonial matcha shaken over ice with a touch of strawberry."
+  },
+  {
+    "id": 14,
+    "name": "Fresh Lemon Mint",
+    "price": 400,
+    "category": "drinks",
+    "rating": 4.2,
+    "inStock": true,
+    "image": "images/lemon-mint.jpeg",
+    "description": "Cold-pressed lemon with fresh mint and a little sugar."
+  }
+]

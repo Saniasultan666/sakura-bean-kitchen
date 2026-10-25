@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakura & Bean Kitchen — Contact</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sakura & Bean Kitchen</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Menu</a></li>
+        <li><a href="cart.html">Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-title">
+      <h1>Contact Us</h1>
+      <p>Questions, feedback or a table booking? Send us a message.</p>
+    </section>
+
+    <div class="contact-layout">
+
+      <!-- Contact form -->
+      <section class="contact-form-section" aria-label="Contact form">
+        <h2>Send a Message</h2>
+
+        <form id="contactForm" novalidate>
+
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="contactName" required minlength="3" placeholder="Your name">
+            <span class="error" id="contactNameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="contactEmail" required placeholder="you@example.com">
+            <span class="error" id="contactEmailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select...</option>
+              <option value="booking">Table booking</option>
+              <option value="feedback">Feedback</option>
+              <option value="order">Question about an order</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="error" id="subjectError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="contactMessage" rows="5" required minlength="10" placeholder="Write your message here"></textarea>
+            <span class="error" id="contactMessageError"></span>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+          <p id="contactSuccess" class="success-message"></p>
+
+        </form>
+      </section>
+
+      <!-- Restaurant information -->
+      <aside class="store-info" aria-label="Restaurant information">
+        <h2>Visit Us</h2>
+
+        <address>
+          Sakura & Bean Kitchen<br>
+          MM Alam Road, Gulberg III<br>
+          Lahore, Pakistan<br>
+          Phone: +92 300 1234567<br>
+          Email: hello@sakurabeankitchen.com
+        </address>
+
+        <h3>Opening Hours</h3>
+        <table class="hours-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday – Friday</td>
+              <td>12:00 PM – 11:00 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday – Sunday</td>
+              <td>11:00 AM – 12:00 AM</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Good to Know</h3>
+        <ul>
+          <li>Free parking available</li>
+          <li>Outdoor garden seating</li>
+          <li>Table bookings recommended on weekends</li>
+        </ul>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Sakura & Bean Kitchen. All rights reserved.</p>
+    <p>MM Alam Road, Gulberg III, Lahore | +92 300 1234567</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
